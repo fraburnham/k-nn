@@ -1,5 +1,12 @@
 (ns k-nn.core)
 
+;is there a better way to expose constants like this? just pass them?
+;keyword args? This seems cleanest, but it is hardly any good for
+;parallelism
+(def partition-const 30)
+
+;not gonna use pmap here, k-nn shouldn't have more than 10 dimensions
+;the overhead of setting up a thread to add ten numbers is not worth it
 (defn sum [f & rest]
   (reduce +' (apply (partial map f) rest)))
 
@@ -10,11 +17,20 @@
 (defn euclidean-distance [a b]
   (Math/sqrt (sum sq-diff a b)))
 
+(defn sq-euclidean-distance [a b]
+  (sum sq-diff a b))
+
 ;map (makes a lazy seq, right?) over the dataset and calculate the distance
 ;each point is from the input, return the distance and classification of the
 ;point whose distance is measured
 (defn distances [dataset input]
-  (map (fn [point]
+  (flatten
+    (pmap #(map (fn [point]
+                  {:distance (euclidean-distance input (:features point))
+                   :class (:class point)})
+                %)
+          (partition-all partition-const dataset)))
+  #_(map (fn [point]
          {:distance (euclidean-distance input (:features point))
           :class (:class point)})
        dataset))
@@ -32,6 +48,7 @@
   (let [[class count] ;class and number of neighbors of that class
          (first
            (sort-by second >
-                    (frequencies (map :class (nn k (distances dataset input))))))]
+                    (frequencies
+                      (map :class (nn k (distances dataset input))))))]
     {:class class
      :certainty (/ count k)}))
