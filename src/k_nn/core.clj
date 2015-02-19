@@ -5,6 +5,9 @@
 ;parallelism
 (def partition-const 30)
 
+(defn abs [x]
+  (if (neg? x) (- 0 x) x))
+
 ;not gonna use pmap here, k-nn shouldn't have more than 10 dimensions
 ;the overhead of setting up a thread to add ten numbers is not worth it
 (defn sum [f & rest]
@@ -20,50 +23,33 @@
 (defn sq-euclidean-distance [a b]
   (sum sq-diff a b))
 
-;add naive grouping
-;it will split the space into equal segments and assign every
-;point to the subspace it belongs to. when searching distances
-;using something like find-naive-group will find the space in which
-;the new point resides. This will allow it to check the distance to fewer particles.
-;Once the distance to the closest particle in this space is known check the distance
-;to the nearest edge of the subspace. If the edge of subspace is closer, check
-;the neighboring space for potentially closer points.
-
 ;look through the neighborhood to find the extremes in all dimensions
 ;return [[-x-extreme x-extreme][-y-extreme y-extreme][etc]]
-;TODO: refactor this into a map
 (defn find-extremes [dataset]
-  (loop [i 0
-         extremes []]
-    (if (= i (count (:features (first dataset))))
-      extremes
-      (recur (inc i)
-             (conj extremes
-                   ((fn [vals]
-                      [(apply min vals)
-                       (apply max vals)])
-                     (map #(nth (:features %) i) dataset)))))))
+  (map (fn [i]
+         ((fn [vals]
+            [(apply min vals)
+             (apply max vals)])
+           (map #(nth (:features %) i) dataset)))
+       (range (count (:features (first dataset))))))
 
 ;chances are these loops that build a return and use an index
 ;can be made in a more idomatic fashion...
 ;this may be an iterate and take...
+;look at that! follow the idiom and the code is more concise
 (defn division-lines [divisions extreme division-size]
-  (loop [r [extreme]
-         i 0]
-    (if (= i divisions)
-      r
-      (recur (conj r (+ (last r) division-size))
-             (inc i)))))
+  (take (inc divisions) (iterate #(+ % division-size) extreme)))
 
 ;using the extreme points in each dimension as the outer bound of space
 ;find the supplied number of subspace sections and return the labeled
 ;subspaces and their bounds
 (defn define-subspaces [extremes divisions]
-  (let [extreme-distances (map (comp #(Math/abs %) (partial apply -)) extremes)
+  (let [extreme-distances (map (comp abs (partial apply -)) extremes)
         division-sizes (map #(/ % divisions) extreme-distances)]
     (map (partial division-lines divisions)
          (map first extremes) division-sizes)))
 
+;TODO: make idiomatic
 (defn group-point [subspaces point]
   (map (fn [division-lines p]
          (loop [d division-lines
@@ -73,35 +59,68 @@
              (recur (rest d) (inc i)))))
        subspaces (:features point)))
 
-;map (makes a lazy seq, right?) over the dataset and calculate the distance
-;each point is from the input, return the distance and classification of the
-;point whose distance is measured
-(defn distances [dataset input]
+;caller will have to update subspaces
+;TODO: make it complete enough to be one call
+(defn update-subspaces [dataset subspaces]
+  (map #(assoc % :subspace (group-point subspaces %)) dataset))
+
+;dataset contains only points in the same subspace as the input point
+(defn subspace-distances [dataset input]
   (flatten
     (pmap #(map (fn [point]
                   {:distance (euclidean-distance input (:features point))
-                   :class (:class point)})
+                   :class (:class point)
+                   :features (:features point)})
                 %)
-          (partition-all partition-const dataset)))
-  #_(map (fn [point]
-         {:distance (euclidean-distance input (:features point))
-          :class (:class point)})
-       dataset))
+          (partition-all partition-const dataset))))
 
 ;nearest neighbors
 ;return the classification of the neighbors as a list
 (defn nn [k distances]
   (take k (sort-by :distance distances)))
 
+(defn same-subspace? [input-subspace point]
+  (= input-subspace (:subspace point)))
+
+(defn adjust-subspace [dimension s-space i-space input closest]
+  (let [min-distance (nth s-space (let [r (dec i-space)]
+                                    (if (neg? r) 0 r)))
+        max-distance (nth s-space i-space)
+        input-distance (abs (- input closest))]
+    (cond (> input-distance min-distance) (let [r (dec i-space)]
+                                            (if (neg? r) 0 r))
+          (> input-distance max-distance) (let [r (inc i-space)]
+                                            (if (>= r (count dimension)) i-space r))
+          :else i-space)))
+
+;return a new subspace dataset that has points from all adjacent subspaces
+(defn expand-subspace [dataset subspaces input-subspace]
+
+  )
+
+(defn distances [dataset subspaces input]
+  ;maybe make this a loop target so the input-subspace can be adjusted
+  ;as needed
+  (let [input-subspace (group-point subspaces {:features input})
+        subspace-dataset (filter (partial same-subspace? input-subspace) dataset)
+        d (subspace-distances subspace-dataset input)
+        [closest] (nn 1 d)
+        adjusted-subspace (map (partial adjust-subspace (count subspaces))
+                               subspaces input-subspace input (:features closest))]
+    ;now check if there are enough points in this subspace (count subspace-dataset)
+    ;if it is less than k then the search space needs to be expanded (this should be done
+    ;in every possible dimension, since nothing of value is learned
+    ))
+
 ;dataset is a list of features and their classifications
 ;dataset looks like:
 ;({:class class :features (feature feature feature)})
 ;input is a list of features with no classification.
-(defn classify [k dataset input]
+(defn classify [k dataset subspaces input]
   (let [[class count] ;class and number of neighbors of that class
          (first
            (sort-by second >
                     (frequencies
-                      (map :class (nn k (distances dataset input))))))]
+                      (map :class (nn k (distances dataset subspaces input))))))]
     {:class class
      :certainty (/ count k)}))

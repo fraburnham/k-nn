@@ -7,9 +7,6 @@
   (testing "FIXME, I fail."
     (is (= 0 1))))
 
-;alright, some rundown
-;pull in the data from iris-data.csv
-
 (defn format-csv-data [filename]
   (map #(assoc {}
                :features (map (fn [x] (Float/parseFloat x)) (drop-last %))
@@ -18,9 +15,13 @@
             (s/split (slurp filename) #"\n"))))
 
 (defn trial []
-  (let [dataset (format-csv-data "iris-data.csv")
-        tests (format-csv-data "iris-test-data.csv")]
-    (map (fn [test]
-           (println (classify 5 dataset (:features test)))
+  (let [d (format-csv-data "iris-data.csv")
+        tests (format-csv-data "iris-test-data.csv")
+        extremes (find-extremes d)
+        subspaces (define-subspaces extremes 4)
+        dataset (update-subspaces d subspaces)]
+    (doall (map (fn [test]
+                  (println test)
+           (println (classify 1 dataset subspaces (:features test)))
            (println "Expected:" (:class test)))
-         tests)))
+         tests))))
