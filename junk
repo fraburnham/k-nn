@@ -1,0 +1,1951 @@
+find-extremes time
+"Elapsed time: 4.160312 msecs"
+
+define-subspaces time
+"Elapsed time: 0.549893 msecs"
+
+update-subspaces time
+"Elapsed time: 0.249806 msecs"
+
+{:class 1, :features (5.1 3.5 1.4 0.2)}
+
+distances time
+  group-point time
+  "Elapsed time: 0.298276 msecs"
+  group-point time
+  "Elapsed time: 0.006673 msecs"
+  group-point time
+  "Elapsed time: 0.006056 msecs"
+  group-point time
+  "Elapsed time: 0.005779 msecs"
+  group-point time
+  "Elapsed time: 0.006015 msecs"
+  group-point time
+  "Elapsed time: 0.006915 msecs"
+  group-point time
+  "Elapsed time: 0.007107 msecs"
+  group-point time
+  "Elapsed time: 0.005891 msecs"
+  group-point time
+  "Elapsed time: 0.005934 msecs"
+  group-point time
+  "Elapsed time: 0.005581 msecs"
+  group-point time
+  "Elapsed time: 0.005968 msecs"
+  group-point time
+  "Elapsed time: 0.004932 msecs"
+  group-point time
+  "Elapsed time: 0.005766 msecs"
+  group-point time
+  "Elapsed time: 0.004973 msecs"
+  group-point time
+  "Elapsed time: 0.005865 msecs"
+  group-point time
+  "Elapsed time: 0.006275 msecs"
+  group-point time
+  "Elapsed time: 0.005206 msecs"
+  group-point time
+  "Elapsed time: 0.005633 msecs"
+  group-point time
+  "Elapsed time: 0.005218 msecs"
+  group-point time
+  "Elapsed time: 0.005585 msecs"
+  group-point time
+  "Elapsed time: 0.005569 msecs"
+  group-point time
+  "Elapsed time: 0.004456 msecs"
+  group-point time
+  "Elapsed time: 0.004421 msecs"
+  group-point time
+  "Elapsed time: 0.004593 msecs"
+  group-point time
+  "Elapsed time: 0.004579 msecs"
+  group-point time
+  "Elapsed time: 0.005204 msecs"
+  group-point time
+  "Elapsed time: 0.005893 msecs"
+  group-point time
+  "Elapsed time: 0.005067 msecs"
+  group-point time
+  "Elapsed time: 0.007349 msecs"
+  group-point time
+  "Elapsed time: 0.005862 msecs"
+  group-point time
+  "Elapsed time: 0.004357 msecs"
+  group-point time
+  "Elapsed time: 0.004557 msecs"
+  group-point time
+  "Elapsed time: 0.00484 msecs"
+  abs time
+  "Elapsed time: 0.045155 msecs"
+  abs time
+  "Elapsed time: 0.012991 msecs"
+  abs time
+  "Elapsed time: 0.009291 msecs"
+  abs time
+  "Elapsed time: 0.013539 msecs"
+  division-lines time
+  "Elapsed time: 0.20341 msecs"
+  division-lines time
+  "Elapsed time: 0.009159 msecs"
+  division-lines time
+  "Elapsed time: 0.007361 msecs"
+  division-lines time
+  "Elapsed time: 0.009586 msecs"
+  group-point time
+  "Elapsed time: 0.005581 msecs"
+  group-point time
+  "Elapsed time: 0.00506 msecs"
+  group-point time
+  "Elapsed time: 0.005527 msecs"
+  group-point time
+  "Elapsed time: 0.01045 msecs"
+  group-point time
+  "Elapsed time: 0.010197 msecs"
+  group-point time
+  "Elapsed time: 0.009554 msecs"
+  group-point time
+  "Elapsed time: 0.006555 msecs"
+  group-point time
+  "Elapsed time: 0.006877 msecs"
+  group-point time
+  "Elapsed time: 0.005701 msecs"
+  group-point time
+  "Elapsed time: 0.005007 msecs"
+  group-point time
+  "Elapsed time: 0.194571 msecs"
+  group-point time
+  "Elapsed time: 0.013486 msecs"
+  group-point time
+  "Elapsed time: 0.011195 msecs"
+  group-point time
+  "Elapsed time: 0.015549 msecs"
+  group-point time
+  "Elapsed time: 0.008274 msecs"
+  group-point time
+  "Elapsed time: 0.00802 msecs"
+  group-point time
+  "Elapsed time: 0.010435 msecs"
+  group-point time
+  "Elapsed time: 0.01146 msecs"
+  group-point time
+  "Elapsed time: 0.009592 msecs"
+  group-point time
+  "Elapsed time: 0.008541 msecs"
+  group-point time
+  "Elapsed time: 0.009644 msecs"
+  group-point time
+  "Elapsed time: 0.008847 msecs"
+  group-point time
+  "Elapsed time: 0.006172 msecs"
+  group-point time
+  "Elapsed time: 0.007812 msecs"
+  group-point time
+  "Elapsed time: 0.006797 msecs"
+  group-point time
+  "Elapsed time: 0.007365 msecs"
+  group-point time
+  "Elapsed time: 0.009691 msecs"
+  group-point time
+  "Elapsed time: 0.007334 msecs"
+  group-point time
+  "Elapsed time: 0.010437 msecs"
+  group-point time
+  "Elapsed time: 0.009601 msecs"
+  ;;repeated 100s more times
+subspace-distances time
+  euclidean-distance time
+    sum time
+      sq-diff time
+      "Elapsed time: 0.127775 msecs"
+      sq-diff time
+      "Elapsed time: 0.019931 msecs"
+      sq-diff time
+      "Elapsed time: 0.020576 msecs"
+      sq-diff time
+      "Elapsed time: 0.030866 msecs"
+    "Elapsed time: 6.516646 msecs"
+  "Elapsed time: 8.545538 msecs"
+  euclidean-distance time
+  ;;like above
+  "Elapsed time: 3.991199 msecs"
+  euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.020492 msecs"
+sq-diff time
+"Elapsed time: 0.009514 msecs"
+sq-diff time
+"Elapsed time: 0.021961 msecs"
+sq-diff time
+"Elapsed time: 0.018751 msecs"
+"Elapsed time: 7.879049 msecs"
+"Elapsed time: 9.233844 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.020529 msecs"
+sq-diff time
+"Elapsed time: 0.020522 msecs"
+sq-diff time
+"Elapsed time: 0.0193 msecs"
+sq-diff time
+"Elapsed time: 0.01879 msecs"
+"Elapsed time: 7.085681 msecs"
+"Elapsed time: 8.94388 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.021978 msecs"
+sq-diff time
+"Elapsed time: 0.019737 msecs"
+sq-diff time
+"Elapsed time: 0.020289 msecs"
+sq-diff time
+"Elapsed time: 0.020147 msecs"
+"Elapsed time: 7.402311 msecs"
+"Elapsed time: 9.086213 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.020715 msecs"
+sq-diff time
+"Elapsed time: 0.019924 msecs"
+sq-diff time
+"Elapsed time: 0.018798 msecs"
+sq-diff time
+"Elapsed time: 0.019547 msecs"
+"Elapsed time: 7.765585 msecs"
+"Elapsed time: 9.549616 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.019755 msecs"
+sq-diff time
+"Elapsed time: 0.019416 msecs"
+sq-diff time
+"Elapsed time: 0.01916 msecs"
+sq-diff time
+"Elapsed time: 0.020185 msecs"
+"Elapsed time: 6.917473 msecs"
+"Elapsed time: 8.61566 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.020319 msecs"
+sq-diff time
+"Elapsed time: 0.024549 msecs"
+sq-diff time
+"Elapsed time: 0.021048 msecs"
+sq-diff time
+"Elapsed time: 0.02153 msecs"
+"Elapsed time: 9.145124 msecs"
+"Elapsed time: 11.058888 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.021137 msecs"
+sq-diff time
+"Elapsed time: 0.021543 msecs"
+sq-diff time
+"Elapsed time: 0.021474 msecs"
+sq-diff time
+"Elapsed time: 0.02343 msecs"
+"Elapsed time: 9.207678 msecs"
+"Elapsed time: 11.361523 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.021087 msecs"
+sq-diff time
+"Elapsed time: 0.593216 msecs"
+sq-diff time
+"Elapsed time: 0.021976 msecs"
+sq-diff time
+"Elapsed time: 0.026116 msecs"
+"Elapsed time: 9.790956 msecs"
+"Elapsed time: 12.196813 msecs"
+"Elapsed time: 110.653291 msecs"
+nn time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.020874 msecs"
+sq-diff time
+"Elapsed time: 0.011611 msecs"
+sq-diff time
+"Elapsed time: 0.007664 msecs"
+sq-diff time
+"Elapsed time: 0.01013 msecs"
+"Elapsed time: 3.829594 msecs"
+"Elapsed time: 5.213442 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011852 msecs"
+sq-diff time
+"Elapsed time: 0.009548 msecs"
+sq-diff time
+"Elapsed time: 0.008135 msecs"
+sq-diff time
+"Elapsed time: 0.008552 msecs"
+"Elapsed time: 2.971033 msecs"
+"Elapsed time: 3.677271 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010506 msecs"
+sq-diff time
+"Elapsed time: 0.009965 msecs"
+sq-diff time
+"Elapsed time: 0.008518 msecs"
+sq-diff time
+"Elapsed time: 0.022038 msecs"
+"Elapsed time: 11.342234 msecs"
+"Elapsed time: 12.88026 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.023531 msecs"
+sq-diff time
+"Elapsed time: 0.02 msecs"
+sq-diff time
+"Elapsed time: 0.029727 msecs"
+sq-diff time
+"Elapsed time: 0.022138 msecs"
+"Elapsed time: 9.082769 msecs"
+"Elapsed time: 11.4944 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.022166 msecs"
+sq-diff time
+"Elapsed time: 0.021059 msecs"
+sq-diff time
+"Elapsed time: 0.023083 msecs"
+sq-diff time
+"Elapsed time: 0.022459 msecs"
+"Elapsed time: 9.379204 msecs"
+"Elapsed time: 11.650937 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.022842 msecs"
+sq-diff time
+"Elapsed time: 0.010248 msecs"
+sq-diff time
+"Elapsed time: 0.009789 msecs"
+sq-diff time
+"Elapsed time: 0.008885 msecs"
+"Elapsed time: 5.638398 msecs"
+"Elapsed time: 12.787568 msecs"
+"Elapsed time: 70.985824 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.006529 msecs"
+"Elapsed time: 4.772976 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.009445 msecs"
+"Elapsed time: 2.222077 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.009133 msecs"
+"Elapsed time: 2.404618 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.020248 msecs"
+"Elapsed time: 1.602631 msecs"
+subspace-distances time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010577 msecs"
+sq-diff time
+"Elapsed time: 0.008716 msecs"
+sq-diff time
+"Elapsed time: 0.009707 msecs"
+sq-diff time
+"Elapsed time: 0.00906 msecs"
+"Elapsed time: 2.827005 msecs"
+"Elapsed time: 3.499087 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.032638 msecs"
+sq-diff time
+"Elapsed time: 0.020091 msecs"
+sq-diff time
+"Elapsed time: 0.018222 msecs"
+sq-diff time
+"Elapsed time: 0.024227 msecs"
+"Elapsed time: 10.253851 msecs"
+"Elapsed time: 12.783836 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.02217 msecs"
+sq-diff time
+"Elapsed time: 0.020945 msecs"
+sq-diff time
+"Elapsed time: 0.016514 msecs"
+sq-diff time
+"Elapsed time: 0.013732 msecs"
+"Elapsed time: 5.766394 msecs"
+"Elapsed time: 7.239643 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.012874 msecs"
+sq-diff time
+"Elapsed time: 0.009675 msecs"
+sq-diff time
+"Elapsed time: 0.021923 msecs"
+sq-diff time
+"Elapsed time: 0.020657 msecs"
+"Elapsed time: 10.352354 msecs"
+"Elapsed time: 11.692458 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.023374 msecs"
+sq-diff time
+"Elapsed time: 0.03098 msecs"
+sq-diff time
+"Elapsed time: 0.017488 msecs"
+sq-diff time
+"Elapsed time: 0.394915 msecs"
+"Elapsed time: 7.137411 msecs"
+"Elapsed time: 8.884385 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.027001 msecs"
+sq-diff time
+"Elapsed time: 0.022553 msecs"
+sq-diff time
+"Elapsed time: 0.019363 msecs"
+sq-diff time
+"Elapsed time: 0.019424 msecs"
+"Elapsed time: 10.156511 msecs"
+"Elapsed time: 13.265965 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.018887 msecs"
+sq-diff time
+"Elapsed time: 0.013169 msecs"
+sq-diff time
+"Elapsed time: 0.023634 msecs"
+sq-diff time
+"Elapsed time: 0.011687 msecs"
+"Elapsed time: 5.003605 msecs"
+"Elapsed time: 6.322059 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010385 msecs"
+sq-diff time
+"Elapsed time: 0.010579 msecs"
+sq-diff time
+"Elapsed time: 0.009131 msecs"
+sq-diff time
+"Elapsed time: 0.008461 msecs"
+"Elapsed time: 2.736975 msecs"
+"Elapsed time: 3.511085 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.017886 msecs"
+sq-diff time
+"Elapsed time: 0.012174 msecs"
+sq-diff time
+"Elapsed time: 0.00822 msecs"
+sq-diff time
+"Elapsed time: 0.011655 msecs"
+"Elapsed time: 7.656409 msecs"
+"Elapsed time: 12.638031 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.030774 msecs"
+sq-diff time
+"Elapsed time: 0.013195 msecs"
+sq-diff time
+"Elapsed time: 0.020111 msecs"
+sq-diff time
+"Elapsed time: 0.011707 msecs"
+"Elapsed time: 9.19187 msecs"
+"Elapsed time: 10.596156 msecs"
+"Elapsed time: 113.230849 msecs"
+"Elapsed time: 581.724205 msecs"
+nn time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.014543 msecs"
+sq-diff time
+"Elapsed time: 0.019824 msecs"
+sq-diff time
+"Elapsed time: 0.016858 msecs"
+sq-diff time
+"Elapsed time: 0.009566 msecs"
+"Elapsed time: 8.622034 msecs"
+"Elapsed time: 9.326866 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.012095 msecs"
+sq-diff time
+"Elapsed time: 0.009782 msecs"
+sq-diff time
+"Elapsed time: 0.010039 msecs"
+sq-diff time
+"Elapsed time: 0.008516 msecs"
+"Elapsed time: 2.545559 msecs"
+"Elapsed time: 3.112832 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011461 msecs"
+sq-diff time
+"Elapsed time: 0.020761 msecs"
+sq-diff time
+"Elapsed time: 0.013109 msecs"
+sq-diff time
+"Elapsed time: 0.025602 msecs"
+"Elapsed time: 6.81012 msecs"
+"Elapsed time: 7.371844 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.012856 msecs"
+sq-diff time
+"Elapsed time: 0.01156 msecs"
+sq-diff time
+"Elapsed time: 0.008481 msecs"
+sq-diff time
+"Elapsed time: 0.008192 msecs"
+"Elapsed time: 2.631461 msecs"
+"Elapsed time: 3.238755 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011486 msecs"
+sq-diff time
+"Elapsed time: 0.009796 msecs"
+sq-diff time
+"Elapsed time: 0.011824 msecs"
+sq-diff time
+"Elapsed time: 0.011707 msecs"
+"Elapsed time: 2.723514 msecs"
+"Elapsed time: 3.258116 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011759 msecs"
+sq-diff time
+"Elapsed time: 0.009553 msecs"
+sq-diff time
+"Elapsed time: 0.009029 msecs"
+sq-diff time
+"Elapsed time: 0.010004 msecs"
+"Elapsed time: 2.445573 msecs"
+"Elapsed time: 2.964298 msecs"
+"Elapsed time: 33.775168 msecs"
+{:class 1, :certainty 1}
+Expected: 1
+{:class 1, :features (4.9 3.0 1.4 0.2)}
+distances time
+group-point time
+"Elapsed time: 0.005456 msecs"
+subspace-distances time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010542 msecs"
+sq-diff time
+"Elapsed time: 0.010309 msecs"
+sq-diff time
+"Elapsed time: 0.008278 msecs"
+sq-diff time
+"Elapsed time: 0.00747 msecs"
+"Elapsed time: 2.345061 msecs"
+"Elapsed time: 2.910348 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011439 msecs"
+sq-diff time
+"Elapsed time: 0.010726 msecs"
+sq-diff time
+"Elapsed time: 0.0093 msecs"
+sq-diff time
+"Elapsed time: 0.007921 msecs"
+"Elapsed time: 2.38109 msecs"
+"Elapsed time: 2.907004 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.018706 msecs"
+sq-diff time
+"Elapsed time: 0.010274 msecs"
+sq-diff time
+"Elapsed time: 0.007357 msecs"
+sq-diff time
+"Elapsed time: 0.015534 msecs"
+"Elapsed time: 2.516016 msecs"
+"Elapsed time: 3.216508 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.013516 msecs"
+sq-diff time
+"Elapsed time: 0.012039 msecs"
+sq-diff time
+"Elapsed time: 0.006705 msecs"
+sq-diff time
+"Elapsed time: 0.008822 msecs"
+"Elapsed time: 2.289545 msecs"
+"Elapsed time: 2.82382 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.01045 msecs"
+sq-diff time
+"Elapsed time: 0.009176 msecs"
+sq-diff time
+"Elapsed time: 0.006637 msecs"
+sq-diff time
+"Elapsed time: 0.007692 msecs"
+"Elapsed time: 2.286736 msecs"
+"Elapsed time: 2.811201 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.014739 msecs"
+sq-diff time
+"Elapsed time: 0.023928 msecs"
+sq-diff time
+"Elapsed time: 0.022134 msecs"
+sq-diff time
+"Elapsed time: 0.028135 msecs"
+"Elapsed time: 16.936365 msecs"
+"Elapsed time: 18.400956 msecs"
+"Elapsed time: 53.830541 msecs"
+nn time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010874 msecs"
+sq-diff time
+"Elapsed time: 0.0208 msecs"
+sq-diff time
+"Elapsed time: 0.010037 msecs"
+sq-diff time
+"Elapsed time: 0.008955 msecs"
+"Elapsed time: 6.598988 msecs"
+"Elapsed time: 7.112648 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.01348 msecs"
+sq-diff time
+"Elapsed time: 0.023357 msecs"
+sq-diff time
+"Elapsed time: 0.023145 msecs"
+sq-diff time
+"Elapsed time: 0.026533 msecs"
+"Elapsed time: 11.223692 msecs"
+"Elapsed time: 12.448125 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.020528 msecs"
+sq-diff time
+"Elapsed time: 0.019691 msecs"
+sq-diff time
+"Elapsed time: 0.023455 msecs"
+sq-diff time
+"Elapsed time: 0.022495 msecs"
+"Elapsed time: 8.066301 msecs"
+"Elapsed time: 10.053622 msecs"
+"Elapsed time: 34.472301 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.009012 msecs"
+"Elapsed time: 2.056199 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.004462 msecs"
+"Elapsed time: 0.837367 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.002468 msecs"
+"Elapsed time: 0.498676 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.008273 msecs"
+"Elapsed time: 0.674894 msecs"
+subspace-distances time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.013546 msecs"
+sq-diff time
+"Elapsed time: 0.008436 msecs"
+sq-diff time
+"Elapsed time: 0.008378 msecs"
+sq-diff time
+"Elapsed time: 0.00738 msecs"
+"Elapsed time: 2.116202 msecs"
+"Elapsed time: 2.547077 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008423 msecs"
+sq-diff time
+"Elapsed time: 0.008451 msecs"
+sq-diff time
+"Elapsed time: 0.010769 msecs"
+sq-diff time
+"Elapsed time: 0.008665 msecs"
+"Elapsed time: 1.980165 msecs"
+"Elapsed time: 2.415715 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009016 msecs"
+sq-diff time
+"Elapsed time: 0.01418 msecs"
+sq-diff time
+"Elapsed time: 0.019769 msecs"
+sq-diff time
+"Elapsed time: 0.021739 msecs"
+"Elapsed time: 9.525326 msecs"
+"Elapsed time: 10.794479 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.021025 msecs"
+sq-diff time
+"Elapsed time: 0.020819 msecs"
+sq-diff time
+"Elapsed time: 0.022307 msecs"
+sq-diff time
+"Elapsed time: 0.024735 msecs"
+"Elapsed time: 8.477129 msecs"
+"Elapsed time: 10.534136 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.021217 msecs"
+sq-diff time
+"Elapsed time: 0.025587 msecs"
+sq-diff time
+"Elapsed time: 0.021468 msecs"
+sq-diff time
+"Elapsed time: 0.022701 msecs"
+"Elapsed time: 8.62871 msecs"
+"Elapsed time: 10.060942 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010449 msecs"
+sq-diff time
+"Elapsed time: 0.008251 msecs"
+sq-diff time
+"Elapsed time: 0.007249 msecs"
+sq-diff time
+"Elapsed time: 0.0079 msecs"
+"Elapsed time: 2.059406 msecs"
+"Elapsed time: 2.578009 msecs"
+"Elapsed time: 45.827147 msecs"
+"Elapsed time: 153.274501 msecs"
+nn time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.013436 msecs"
+sq-diff time
+"Elapsed time: 0.010473 msecs"
+sq-diff time
+"Elapsed time: 0.020814 msecs"
+sq-diff time
+"Elapsed time: 0.142507 msecs"
+"Elapsed time: 3.88402 msecs"
+"Elapsed time: 4.63011 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.012992 msecs"
+sq-diff time
+"Elapsed time: 0.013101 msecs"
+sq-diff time
+"Elapsed time: 0.007415 msecs"
+sq-diff time
+"Elapsed time: 0.007585 msecs"
+"Elapsed time: 1.965509 msecs"
+"Elapsed time: 2.448272 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009798 msecs"
+sq-diff time
+"Elapsed time: 0.008581 msecs"
+sq-diff time
+"Elapsed time: 0.009265 msecs"
+sq-diff time
+"Elapsed time: 0.008118 msecs"
+"Elapsed time: 1.902401 msecs"
+"Elapsed time: 2.331873 msecs"
+"Elapsed time: 12.228351 msecs"
+{:class 1, :certainty 1}
+Expected: 1
+{:class 1, :features (4.7 3.2 1.3 0.2)}
+distances time
+group-point time
+"Elapsed time: 0.005771 msecs"
+subspace-distances time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011278 msecs"
+sq-diff time
+"Elapsed time: 0.007186 msecs"
+sq-diff time
+"Elapsed time: 0.007117 msecs"
+sq-diff time
+"Elapsed time: 0.007514 msecs"
+"Elapsed time: 1.886431 msecs"
+"Elapsed time: 2.321767 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011062 msecs"
+sq-diff time
+"Elapsed time: 0.007523 msecs"
+sq-diff time
+"Elapsed time: 0.007003 msecs"
+sq-diff time
+"Elapsed time: 0.008631 msecs"
+"Elapsed time: 1.878491 msecs"
+"Elapsed time: 2.302993 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010955 msecs"
+sq-diff time
+"Elapsed time: 0.010677 msecs"
+sq-diff time
+"Elapsed time: 0.006192 msecs"
+sq-diff time
+"Elapsed time: 0.007463 msecs"
+"Elapsed time: 2.005608 msecs"
+"Elapsed time: 2.461068 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.01459 msecs"
+sq-diff time
+"Elapsed time: 0.007658 msecs"
+sq-diff time
+"Elapsed time: 0.006958 msecs"
+sq-diff time
+"Elapsed time: 0.01184 msecs"
+"Elapsed time: 2.333612 msecs"
+"Elapsed time: 2.770464 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008583 msecs"
+sq-diff time
+"Elapsed time: 0.008179 msecs"
+sq-diff time
+"Elapsed time: 0.006623 msecs"
+sq-diff time
+"Elapsed time: 0.013167 msecs"
+"Elapsed time: 2.115818 msecs"
+"Elapsed time: 2.538776 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.012333 msecs"
+sq-diff time
+"Elapsed time: 0.007338 msecs"
+sq-diff time
+"Elapsed time: 0.007281 msecs"
+sq-diff time
+"Elapsed time: 0.011458 msecs"
+"Elapsed time: 2.01482 msecs"
+"Elapsed time: 2.708848 msecs"
+"Elapsed time: 17.796187 msecs"
+nn time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010371 msecs"
+sq-diff time
+"Elapsed time: 0.00895 msecs"
+sq-diff time
+"Elapsed time: 0.008251 msecs"
+sq-diff time
+"Elapsed time: 0.010625 msecs"
+"Elapsed time: 2.010809 msecs"
+"Elapsed time: 4.715523 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010013 msecs"
+sq-diff time
+"Elapsed time: 0.007739 msecs"
+sq-diff time
+"Elapsed time: 0.006896 msecs"
+sq-diff time
+"Elapsed time: 0.008237 msecs"
+"Elapsed time: 1.838731 msecs"
+"Elapsed time: 2.265778 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009713 msecs"
+sq-diff time
+"Elapsed time: 0.009387 msecs"
+sq-diff time
+"Elapsed time: 0.007606 msecs"
+sq-diff time
+"Elapsed time: 0.007194 msecs"
+"Elapsed time: 1.8378 msecs"
+"Elapsed time: 2.294558 msecs"
+"Elapsed time: 11.016712 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.002749 msecs"
+"Elapsed time: 0.451782 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.002842 msecs"
+"Elapsed time: 0.518895 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.008183 msecs"
+"Elapsed time: 0.455038 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.003083 msecs"
+"Elapsed time: 0.44752 msecs"
+"Elapsed time: 34.634267 msecs"
+nn time
+"Elapsed time: 0.079357 msecs"
+{:class 1, :certainty 1}
+Expected: 1
+{:class 1, :features (4.6 3.1 1.5 0.2)}
+distances time
+group-point time
+"Elapsed time: 0.004558 msecs"
+subspace-distances time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010246 msecs"
+sq-diff time
+"Elapsed time: 0.00749 msecs"
+sq-diff time
+"Elapsed time: 0.007248 msecs"
+sq-diff time
+"Elapsed time: 0.007557 msecs"
+"Elapsed time: 1.890354 msecs"
+"Elapsed time: 2.308175 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009623 msecs"
+sq-diff time
+"Elapsed time: 0.007741 msecs"
+sq-diff time
+"Elapsed time: 0.006673 msecs"
+sq-diff time
+"Elapsed time: 0.007455 msecs"
+"Elapsed time: 1.884062 msecs"
+"Elapsed time: 2.360665 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011644 msecs"
+sq-diff time
+"Elapsed time: 0.011379 msecs"
+sq-diff time
+"Elapsed time: 0.007543 msecs"
+sq-diff time
+"Elapsed time: 0.008689 msecs"
+"Elapsed time: 2.177234 msecs"
+"Elapsed time: 2.59165 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.012107 msecs"
+sq-diff time
+"Elapsed time: 0.008435 msecs"
+sq-diff time
+"Elapsed time: 0.00757 msecs"
+sq-diff time
+"Elapsed time: 0.009023 msecs"
+"Elapsed time: 2.047782 msecs"
+"Elapsed time: 2.483661 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010001 msecs"
+sq-diff time
+"Elapsed time: 0.006778 msecs"
+sq-diff time
+"Elapsed time: 0.009004 msecs"
+sq-diff time
+"Elapsed time: 0.014715 msecs"
+"Elapsed time: 2.451161 msecs"
+"Elapsed time: 2.870122 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008947 msecs"
+sq-diff time
+"Elapsed time: 0.006864 msecs"
+sq-diff time
+"Elapsed time: 0.006152 msecs"
+sq-diff time
+"Elapsed time: 0.006913 msecs"
+"Elapsed time: 1.921087 msecs"
+"Elapsed time: 2.381928 msecs"
+"Elapsed time: 17.895119 msecs"
+nn time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011656 msecs"
+sq-diff time
+"Elapsed time: 0.012189 msecs"
+sq-diff time
+"Elapsed time: 0.008279 msecs"
+sq-diff time
+"Elapsed time: 0.0088 msecs"
+"Elapsed time: 12.430046 msecs"
+"Elapsed time: 12.870047 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010954 msecs"
+sq-diff time
+"Elapsed time: 0.012248 msecs"
+sq-diff time
+"Elapsed time: 0.01415 msecs"
+sq-diff time
+"Elapsed time: 0.007173 msecs"
+"Elapsed time: 2.315726 msecs"
+"Elapsed time: 2.749589 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011089 msecs"
+sq-diff time
+"Elapsed time: 0.008801 msecs"
+sq-diff time
+"Elapsed time: 0.008079 msecs"
+sq-diff time
+"Elapsed time: 0.008615 msecs"
+"Elapsed time: 1.913375 msecs"
+"Elapsed time: 2.408297 msecs"
+"Elapsed time: 19.685283 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.002822 msecs"
+"Elapsed time: 0.470987 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.008442 msecs"
+"Elapsed time: 0.474158 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.003157 msecs"
+"Elapsed time: 0.441161 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.008512 msecs"
+"Elapsed time: 16.822964 msecs"
+"Elapsed time: 63.24739 msecs"
+nn time
+"Elapsed time: 0.078107 msecs"
+{:class 1, :certainty 1}
+Expected: 1
+{:class 1, :features (5.0 3.6 1.4 0.2)}
+distances time
+group-point time
+"Elapsed time: 0.0044 msecs"
+subspace-distances time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.012124 msecs"
+sq-diff time
+"Elapsed time: 0.007165 msecs"
+sq-diff time
+"Elapsed time: 0.005933 msecs"
+sq-diff time
+"Elapsed time: 0.009552 msecs"
+"Elapsed time: 1.941125 msecs"
+"Elapsed time: 2.399363 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009604 msecs"
+sq-diff time
+"Elapsed time: 0.010073 msecs"
+sq-diff time
+"Elapsed time: 0.007551 msecs"
+sq-diff time
+"Elapsed time: 0.006872 msecs"
+"Elapsed time: 6.216832 msecs"
+"Elapsed time: 6.627021 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009522 msecs"
+sq-diff time
+"Elapsed time: 0.007366 msecs"
+sq-diff time
+"Elapsed time: 0.006475 msecs"
+sq-diff time
+"Elapsed time: 0.006672 msecs"
+"Elapsed time: 1.816224 msecs"
+"Elapsed time: 2.237163 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009806 msecs"
+sq-diff time
+"Elapsed time: 0.007376 msecs"
+sq-diff time
+"Elapsed time: 0.005901 msecs"
+sq-diff time
+"Elapsed time: 0.007175 msecs"
+"Elapsed time: 1.769195 msecs"
+"Elapsed time: 2.18743 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.019776 msecs"
+sq-diff time
+"Elapsed time: 0.008604 msecs"
+sq-diff time
+"Elapsed time: 0.005974 msecs"
+sq-diff time
+"Elapsed time: 0.006655 msecs"
+"Elapsed time: 12.133941 msecs"
+"Elapsed time: 12.6761 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009741 msecs"
+sq-diff time
+"Elapsed time: 0.008061 msecs"
+sq-diff time
+"Elapsed time: 0.007176 msecs"
+sq-diff time
+"Elapsed time: 0.009643 msecs"
+"Elapsed time: 11.570429 msecs"
+"Elapsed time: 12.053102 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.00963 msecs"
+sq-diff time
+"Elapsed time: 0.008942 msecs"
+sq-diff time
+"Elapsed time: 0.006984 msecs"
+sq-diff time
+"Elapsed time: 0.007273 msecs"
+"Elapsed time: 1.825811 msecs"
+"Elapsed time: 2.230532 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011491 msecs"
+sq-diff time
+"Elapsed time: 0.010245 msecs"
+sq-diff time
+"Elapsed time: 0.007482 msecs"
+sq-diff time
+"Elapsed time: 0.007177 msecs"
+"Elapsed time: 1.937728 msecs"
+"Elapsed time: 2.500672 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010214 msecs"
+sq-diff time
+"Elapsed time: 0.007846 msecs"
+sq-diff time
+"Elapsed time: 0.007383 msecs"
+sq-diff time
+"Elapsed time: 0.008166 msecs"
+"Elapsed time: 1.892742 msecs"
+"Elapsed time: 2.301792 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009677 msecs"
+sq-diff time
+"Elapsed time: 0.009766 msecs"
+sq-diff time
+"Elapsed time: 0.007274 msecs"
+sq-diff time
+"Elapsed time: 0.007304 msecs"
+"Elapsed time: 2.019776 msecs"
+"Elapsed time: 2.526538 msecs"
+"Elapsed time: 52.166997 msecs"
+nn time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010338 msecs"
+sq-diff time
+"Elapsed time: 0.008293 msecs"
+sq-diff time
+"Elapsed time: 0.00732 msecs"
+sq-diff time
+"Elapsed time: 0.010153 msecs"
+"Elapsed time: 1.882936 msecs"
+"Elapsed time: 2.372306 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010198 msecs"
+sq-diff time
+"Elapsed time: 0.007051 msecs"
+sq-diff time
+"Elapsed time: 0.007651 msecs"
+sq-diff time
+"Elapsed time: 0.007244 msecs"
+"Elapsed time: 1.80306 msecs"
+"Elapsed time: 2.37 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010294 msecs"
+sq-diff time
+"Elapsed time: 0.007741 msecs"
+sq-diff time
+"Elapsed time: 0.008199 msecs"
+sq-diff time
+"Elapsed time: 0.007091 msecs"
+"Elapsed time: 1.872484 msecs"
+"Elapsed time: 2.300831 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008845 msecs"
+sq-diff time
+"Elapsed time: 0.008287 msecs"
+sq-diff time
+"Elapsed time: 0.007576 msecs"
+sq-diff time
+"Elapsed time: 0.010342 msecs"
+"Elapsed time: 1.985879 msecs"
+"Elapsed time: 8.074382 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010455 msecs"
+sq-diff time
+"Elapsed time: 0.008575 msecs"
+sq-diff time
+"Elapsed time: 0.009718 msecs"
+sq-diff time
+"Elapsed time: 0.009677 msecs"
+"Elapsed time: 2.018104 msecs"
+"Elapsed time: 2.477945 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011895 msecs"
+sq-diff time
+"Elapsed time: 0.010923 msecs"
+sq-diff time
+"Elapsed time: 0.008458 msecs"
+sq-diff time
+"Elapsed time: 0.007924 msecs"
+"Elapsed time: 1.976148 msecs"
+"Elapsed time: 2.410427 msecs"
+"Elapsed time: 47.235661 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.022607 msecs"
+"Elapsed time: 1.570713 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.003704 msecs"
+"Elapsed time: 0.548379 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.003135 msecs"
+"Elapsed time: 0.52926 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.008339 msecs"
+"Elapsed time: 0.480166 msecs"
+subspace-distances time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.012835 msecs"
+sq-diff time
+"Elapsed time: 0.006868 msecs"
+sq-diff time
+"Elapsed time: 0.008122 msecs"
+sq-diff time
+"Elapsed time: 0.007688 msecs"
+"Elapsed time: 1.851779 msecs"
+"Elapsed time: 2.310978 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010711 msecs"
+sq-diff time
+"Elapsed time: 0.007713 msecs"
+sq-diff time
+"Elapsed time: 0.021499 msecs"
+sq-diff time
+"Elapsed time: 0.021362 msecs"
+"Elapsed time: 13.742402 msecs"
+"Elapsed time: 17.248949 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.021377 msecs"
+sq-diff time
+"Elapsed time: 0.022412 msecs"
+sq-diff time
+"Elapsed time: 0.024439 msecs"
+sq-diff time
+"Elapsed time: 0.020945 msecs"
+"Elapsed time: 14.438432 msecs"
+"Elapsed time: 15.506428 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010088 msecs"
+sq-diff time
+"Elapsed time: 0.008814 msecs"
+sq-diff time
+"Elapsed time: 0.007653 msecs"
+sq-diff time
+"Elapsed time: 0.007311 msecs"
+"Elapsed time: 1.859528 msecs"
+"Elapsed time: 2.27827 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010138 msecs"
+sq-diff time
+"Elapsed time: 0.006864 msecs"
+sq-diff time
+"Elapsed time: 0.008046 msecs"
+sq-diff time
+"Elapsed time: 0.007707 msecs"
+"Elapsed time: 1.829243 msecs"
+"Elapsed time: 2.242641 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.013148 msecs"
+sq-diff time
+"Elapsed time: 0.021791 msecs"
+sq-diff time
+"Elapsed time: 0.026604 msecs"
+sq-diff time
+"Elapsed time: 0.019181 msecs"
+"Elapsed time: 13.831914 msecs"
+"Elapsed time: 21.012806 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.021877 msecs"
+sq-diff time
+"Elapsed time: 0.025417 msecs"
+sq-diff time
+"Elapsed time: 0.016908 msecs"
+sq-diff time
+"Elapsed time: 0.021883 msecs"
+"Elapsed time: 6.046691 msecs"
+"Elapsed time: 7.190512 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010511 msecs"
+sq-diff time
+"Elapsed time: 0.007996 msecs"
+sq-diff time
+"Elapsed time: 0.007111 msecs"
+sq-diff time
+"Elapsed time: 0.00899 msecs"
+"Elapsed time: 1.900552 msecs"
+"Elapsed time: 2.399298 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011104 msecs"
+sq-diff time
+"Elapsed time: 0.007991 msecs"
+sq-diff time
+"Elapsed time: 0.006393 msecs"
+sq-diff time
+"Elapsed time: 0.007904 msecs"
+"Elapsed time: 1.749939 msecs"
+"Elapsed time: 2.206283 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008982 msecs"
+sq-diff time
+"Elapsed time: 0.00767 msecs"
+sq-diff time
+"Elapsed time: 0.008731 msecs"
+sq-diff time
+"Elapsed time: 0.007179 msecs"
+"Elapsed time: 1.822923 msecs"
+"Elapsed time: 2.220229 msecs"
+"Elapsed time: 93.868352 msecs"
+"Elapsed time: 211.024347 msecs"
+nn time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010693 msecs"
+sq-diff time
+"Elapsed time: 0.007556 msecs"
+sq-diff time
+"Elapsed time: 0.007711 msecs"
+sq-diff time
+"Elapsed time: 0.008642 msecs"
+"Elapsed time: 1.81308 msecs"
+"Elapsed time: 2.21862 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010146 msecs"
+sq-diff time
+"Elapsed time: 0.008308 msecs"
+sq-diff time
+"Elapsed time: 0.008388 msecs"
+sq-diff time
+"Elapsed time: 0.007699 msecs"
+"Elapsed time: 1.798055 msecs"
+"Elapsed time: 2.205012 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.019882 msecs"
+sq-diff time
+"Elapsed time: 0.019513 msecs"
+sq-diff time
+"Elapsed time: 0.021599 msecs"
+sq-diff time
+"Elapsed time: 0.022237 msecs"
+"Elapsed time: 6.405611 msecs"
+"Elapsed time: 19.000558 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.012528 msecs"
+sq-diff time
+"Elapsed time: 0.009013 msecs"
+sq-diff time
+"Elapsed time: 0.007993 msecs"
+sq-diff time
+"Elapsed time: 0.006669 msecs"
+"Elapsed time: 1.847102 msecs"
+"Elapsed time: 2.271449 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008996 msecs"
+sq-diff time
+"Elapsed time: 0.007933 msecs"
+sq-diff time
+"Elapsed time: 0.008546 msecs"
+sq-diff time
+"Elapsed time: 0.009341 msecs"
+"Elapsed time: 1.772849 msecs"
+"Elapsed time: 2.217279 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.018988 msecs"
+sq-diff time
+"Elapsed time: 0.013649 msecs"
+sq-diff time
+"Elapsed time: 0.019749 msecs"
+sq-diff time
+"Elapsed time: 0.024588 msecs"
+"Elapsed time: 23.303767 msecs"
+"Elapsed time: 24.234426 msecs"
+"Elapsed time: 56.121202 msecs"
+{:class 1, :certainty 1}
+Expected: 1
+{:class 1, :features (5.4 3.9 1.7 0.4)}
+distances time
+group-point time
+"Elapsed time: 0.011672 msecs"
+subspace-distances time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.019677 msecs"
+sq-diff time
+"Elapsed time: 0.019587 msecs"
+sq-diff time
+"Elapsed time: 0.024186 msecs"
+sq-diff time
+"Elapsed time: 0.01834 msecs"
+"Elapsed time: 6.20667 msecs"
+"Elapsed time: 7.380177 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.022724 msecs"
+sq-diff time
+"Elapsed time: 0.019191 msecs"
+sq-diff time
+"Elapsed time: 0.020754 msecs"
+sq-diff time
+"Elapsed time: 0.020527 msecs"
+"Elapsed time: 10.003722 msecs"
+"Elapsed time: 11.480158 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011207 msecs"
+sq-diff time
+"Elapsed time: 0.007781 msecs"
+sq-diff time
+"Elapsed time: 0.008262 msecs"
+sq-diff time
+"Elapsed time: 0.008944 msecs"
+"Elapsed time: 1.874776 msecs"
+"Elapsed time: 2.318732 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.019694 msecs"
+sq-diff time
+"Elapsed time: 0.018881 msecs"
+sq-diff time
+"Elapsed time: 0.019123 msecs"
+sq-diff time
+"Elapsed time: 0.021314 msecs"
+"Elapsed time: 16.142892 msecs"
+"Elapsed time: 18.695744 msecs"
+"Elapsed time: 66.527636 msecs"
+nn time
+"Elapsed time: 0.060993 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.002611 msecs"
+"Elapsed time: 0.406774 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.002498 msecs"
+"Elapsed time: 0.428008 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.007061 msecs"
+"Elapsed time: 4.566894 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.007033 msecs"
+"Elapsed time: 1.77422 msecs"
+"Elapsed time: 89.604941 msecs"
+nn time
+"Elapsed time: 0.068344 msecs"
+{:class 1, :certainty 1}
+Expected: 1
+{:class 1, :features (4.6 3.4 1.4 0.3)}
+distances time
+group-point time
+"Elapsed time: 0.011332 msecs"
+subspace-distances time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.019089 msecs"
+sq-diff time
+"Elapsed time: 0.019825 msecs"
+sq-diff time
+"Elapsed time: 0.020658 msecs"
+sq-diff time
+"Elapsed time: 0.019915 msecs"
+"Elapsed time: 12.449149 msecs"
+"Elapsed time: 15.178891 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009942 msecs"
+sq-diff time
+"Elapsed time: 0.008805 msecs"
+sq-diff time
+"Elapsed time: 0.006241 msecs"
+sq-diff time
+"Elapsed time: 0.008367 msecs"
+"Elapsed time: 1.782228 msecs"
+"Elapsed time: 2.227004 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009991 msecs"
+sq-diff time
+"Elapsed time: 0.007623 msecs"
+sq-diff time
+"Elapsed time: 0.0073 msecs"
+sq-diff time
+"Elapsed time: 0.0209 msecs"
+"Elapsed time: 14.701517 msecs"
+"Elapsed time: 17.579856 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.021732 msecs"
+sq-diff time
+"Elapsed time: 0.02268 msecs"
+sq-diff time
+"Elapsed time: 0.019109 msecs"
+sq-diff time
+"Elapsed time: 0.019243 msecs"
+"Elapsed time: 11.893561 msecs"
+"Elapsed time: 15.381754 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.023762 msecs"
+sq-diff time
+"Elapsed time: 0.021284 msecs"
+sq-diff time
+"Elapsed time: 0.02237 msecs"
+sq-diff time
+"Elapsed time: 0.019329 msecs"
+"Elapsed time: 7.955963 msecs"
+"Elapsed time: 9.881162 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.020507 msecs"
+sq-diff time
+"Elapsed time: 0.019602 msecs"
+sq-diff time
+"Elapsed time: 0.008905 msecs"
+sq-diff time
+"Elapsed time: 0.007885 msecs"
+"Elapsed time: 4.154089 msecs"
+"Elapsed time: 5.310187 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008781 msecs"
+sq-diff time
+"Elapsed time: 0.007609 msecs"
+sq-diff time
+"Elapsed time: 0.006394 msecs"
+sq-diff time
+"Elapsed time: 0.006506 msecs"
+"Elapsed time: 1.608167 msecs"
+"Elapsed time: 1.967924 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.007785 msecs"
+sq-diff time
+"Elapsed time: 0.008021 msecs"
+sq-diff time
+"Elapsed time: 0.007492 msecs"
+sq-diff time
+"Elapsed time: 0.005562 msecs"
+"Elapsed time: 1.653356 msecs"
+"Elapsed time: 1.999489 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008887 msecs"
+sq-diff time
+"Elapsed time: 0.006162 msecs"
+sq-diff time
+"Elapsed time: 0.0059 msecs"
+sq-diff time
+"Elapsed time: 0.006162 msecs"
+"Elapsed time: 1.696642 msecs"
+"Elapsed time: 2.055412 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009477 msecs"
+sq-diff time
+"Elapsed time: 0.020345 msecs"
+sq-diff time
+"Elapsed time: 0.020091 msecs"
+sq-diff time
+"Elapsed time: 0.019077 msecs"
+"Elapsed time: 14.79611 msecs"
+"Elapsed time: 15.844929 msecs"
+"Elapsed time: 100.410631 msecs"
+nn time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.019429 msecs"
+sq-diff time
+"Elapsed time: 0.019963 msecs"
+sq-diff time
+"Elapsed time: 0.018204 msecs"
+sq-diff time
+"Elapsed time: 0.011897 msecs"
+"Elapsed time: 6.296332 msecs"
+"Elapsed time: 7.378285 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.007775 msecs"
+sq-diff time
+"Elapsed time: 0.007155 msecs"
+sq-diff time
+"Elapsed time: 0.008315 msecs"
+sq-diff time
+"Elapsed time: 0.007026 msecs"
+"Elapsed time: 1.610142 msecs"
+"Elapsed time: 1.965301 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010037 msecs"
+sq-diff time
+"Elapsed time: 0.022707 msecs"
+sq-diff time
+"Elapsed time: 0.019291 msecs"
+sq-diff time
+"Elapsed time: 0.020086 msecs"
+"Elapsed time: 10.546081 msecs"
+"Elapsed time: 11.743032 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.020644 msecs"
+sq-diff time
+"Elapsed time: 0.019943 msecs"
+sq-diff time
+"Elapsed time: 0.017871 msecs"
+sq-diff time
+"Elapsed time: 0.018231 msecs"
+"Elapsed time: 7.119193 msecs"
+"Elapsed time: 8.494425 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009887 msecs"
+sq-diff time
+"Elapsed time: 0.009384 msecs"
+sq-diff time
+"Elapsed time: 0.00772 msecs"
+sq-diff time
+"Elapsed time: 0.007064 msecs"
+"Elapsed time: 1.734431 msecs"
+"Elapsed time: 2.102364 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008327 msecs"
+sq-diff time
+"Elapsed time: 0.006644 msecs"
+sq-diff time
+"Elapsed time: 0.009045 msecs"
+sq-diff time
+"Elapsed time: 0.014544 msecs"
+"Elapsed time: 2.114723 msecs"
+"Elapsed time: 2.491714 msecs"
+"Elapsed time: 42.680823 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.023294 msecs"
+"Elapsed time: 1.484171 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.002405 msecs"
+"Elapsed time: 0.41856 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.011783 msecs"
+"Elapsed time: 0.629783 msecs"
+adjust-subspace time
+abs time
+"Elapsed time: 0.002795 msecs"
+"Elapsed time: 0.459955 msecs"
+subspace-distances time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008796 msecs"
+sq-diff time
+"Elapsed time: 0.020009 msecs"
+sq-diff time
+"Elapsed time: 0.007445 msecs"
+sq-diff time
+"Elapsed time: 0.006048 msecs"
+"Elapsed time: 10.072597 msecs"
+"Elapsed time: 10.425161 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.021492 msecs"
+sq-diff time
+"Elapsed time: 0.008394 msecs"
+sq-diff time
+"Elapsed time: 0.006003 msecs"
+sq-diff time
+"Elapsed time: 0.006133 msecs"
+"Elapsed time: 1.734713 msecs"
+"Elapsed time: 5.182746 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009286 msecs"
+sq-diff time
+"Elapsed time: 0.008622 msecs"
+sq-diff time
+"Elapsed time: 0.008307 msecs"
+sq-diff time
+"Elapsed time: 0.006884 msecs"
+"Elapsed time: 3.363064 msecs"
+"Elapsed time: 3.801824 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009202 msecs"
+sq-diff time
+"Elapsed time: 0.006083 msecs"
+sq-diff time
+"Elapsed time: 0.006168 msecs"
+sq-diff time
+"Elapsed time: 0.007297 msecs"
+"Elapsed time: 1.743565 msecs"
+"Elapsed time: 2.203502 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.019669 msecs"
+sq-diff time
+"Elapsed time: 0.010942 msecs"
+sq-diff time
+"Elapsed time: 0.008262 msecs"
+sq-diff time
+"Elapsed time: 0.006426 msecs"
+"Elapsed time: 7.440384 msecs"
+"Elapsed time: 7.870359 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.00819 msecs"
+sq-diff time
+"Elapsed time: 0.006401 msecs"
+sq-diff time
+"Elapsed time: 0.005883 msecs"
+sq-diff time
+"Elapsed time: 0.005946 msecs"
+"Elapsed time: 1.57239 msecs"
+"Elapsed time: 1.926432 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.013191 msecs"
+sq-diff time
+"Elapsed time: 0.009826 msecs"
+sq-diff time
+"Elapsed time: 0.006433 msecs"
+sq-diff time
+"Elapsed time: 0.006797 msecs"
+"Elapsed time: 1.836824 msecs"
+"Elapsed time: 2.742319 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.0086 msecs"
+sq-diff time
+"Elapsed time: 0.007371 msecs"
+sq-diff time
+"Elapsed time: 0.005784 msecs"
+sq-diff time
+"Elapsed time: 0.011445 msecs"
+"Elapsed time: 1.958102 msecs"
+"Elapsed time: 2.323128 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.00986 msecs"
+sq-diff time
+"Elapsed time: 0.006715 msecs"
+sq-diff time
+"Elapsed time: 0.006252 msecs"
+sq-diff time
+"Elapsed time: 0.005841 msecs"
+"Elapsed time: 1.591135 msecs"
+"Elapsed time: 1.947905 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.008327 msecs"
+sq-diff time
+"Elapsed time: 0.007021 msecs"
+sq-diff time
+"Elapsed time: 0.006671 msecs"
+sq-diff time
+"Elapsed time: 0.006517 msecs"
+"Elapsed time: 1.539755 msecs"
+"Elapsed time: 1.884467 msecs"
+"Elapsed time: 48.649879 msecs"
+"Elapsed time: 205.966087 msecs"
+nn time
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.010224 msecs"
+sq-diff time
+"Elapsed time: 0.008684 msecs"
+sq-diff time
+"Elapsed time: 0.007858 msecs"
+sq-diff time
+"Elapsed time: 0.006881 msecs"
+"Elapsed time: 1.589951 msecs"
+"Elapsed time: 1.95993 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.007574 msecs"
+sq-diff time
+"Elapsed time: 0.006695 msecs"
+sq-diff time
+"Elapsed time: 0.006668 msecs"
+sq-diff time
+"Elapsed time: 0.00789 msecs"
+"Elapsed time: 1.639052 msecs"
+"Elapsed time: 1.997929 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.011304 msecs"
+sq-diff time
+"Elapsed time: 0.007219 msecs"
+sq-diff time
+"Elapsed time: 0.00624 msecs"
+sq-diff time
+"Elapsed time: 0.00683 msecs"
+"Elapsed time: 1.632175 msecs"
+"Elapsed time: 1.988575 msecs"
+euclidean-distance time
+sum time
+sq-diff time
+"Elapsed time: 0.009271 msecs"
+sq-diff

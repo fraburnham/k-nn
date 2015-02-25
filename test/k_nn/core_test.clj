@@ -18,7 +18,8 @@
   (let [d (format-csv-data "iris-data.csv")
         tests (format-csv-data "iris-test-data.csv")
         extremes (find-extremes d)
-        subspaces (define-subspaces extremes 4)
+        subspaces (define-subspaces extremes (int (Math/sqrt (count d))))
+        _ (println (int (Math/sqrt (count d))))
         dataset (update-subspaces d subspaces)]
     (doall (map (fn [test]
                   (println test)
