@@ -25,15 +25,10 @@
 ;point whose distance is measured
 (defn distances [dataset input]
   (flatten
-    (pmap #(map (fn [point]
-                  {:distance (euclidean-distance input (:features point))
-                   :class (:class point)})
-                %)
-          (partition-all partition-const dataset)))
-  #_(map (fn [point]
-         {:distance (euclidean-distance input (:features point))
+    (map (fn [point]
+         {:distance (sq-euclidean-distance input (:features point))
           :class (:class point)})
-       dataset))
+       dataset)))
 
 ;nearest neighbors
 ;return the classification of the neighbors as a list
