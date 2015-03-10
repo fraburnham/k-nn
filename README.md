@@ -21,8 +21,6 @@ The code below classifies the tests.
 (pmap #(classify 1 dataset (:features %)) tests)
 ```
 
-## License
-
 The MIT License
 ===============
 
