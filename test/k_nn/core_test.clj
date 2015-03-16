@@ -3,9 +3,9 @@
             [k-nn.core :refer :all]
             [clojure.string :as s]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+;trying out test driven development
+;start with making tests for each of the expected interface functions
+;Red Green Refactor
 
 (defn format-csv-data [filename]
   (map #(assoc {}
@@ -14,15 +14,19 @@
        (map #(s/split % #",")
             (s/split (slurp filename) #"\n"))))
 
-(defn trial []
-  (let [d (format-csv-data "iris-data.csv")
-        tests (format-csv-data "iris-test-data.csv")
-        extremes (find-extremes d)
-        subspaces (define-subspaces extremes (int (Math/sqrt (count d))))
-        _ (println (int (Math/sqrt (count d))))
-        dataset (update-subspaces d subspaces)]
-    (doall (map (fn [test]
-                  (println test)
-           (println (classify 1 dataset subspaces (:features test)))
-           (println "Expected:" (:class test)))
-         tests))))
+(def dataset (format-csv-data "test-data/iris-data.csv"))
+(def tests (format-csv-data "test-data/iris-test-data.csv"))
+
+(deftest prepare-test
+  (testing "Preparation of data for classify. K-D tree or brute force (no prep)"
+    ;need to assert that the tree is returned, write a different test to verify
+    ;that the tree is giving the correct data based on the algo passed
+    ))
+
+(deftest iris-test
+  (testing "1-nn on famous iris data"
+    (let [kdtree (prepare dataset)]
+      (doall (map (fn [test]
+                    (is (= (:class (classify 1 kdtree test))
+                           (:class test))))
+                  tests)))))

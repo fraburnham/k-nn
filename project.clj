@@ -4,4 +4,5 @@
   :license {:name "MIT License"
             :url "https://github.com/fraburnham/k-nn/blob/master/LICENSE"}
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/math.combinatorics "0.0.8"]])
+                 [org.clojure/math.combinatorics "0.0.8"]
+                 [com.evolvingneuron/KDTree "0.1.0"]])
