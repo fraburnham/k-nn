@@ -20,12 +20,13 @@
   (Math/sqrt (sum sq-diff a b)))
 
 (defn sq-euclidean-distance [a b]
-  (new BigDecimal (sum sq-diff a b)))
+  (sum sq-diff a b))
 
 (def interface
   (reify IKDTree
     (distance [this a b]
-      (sq-euclidean-distance (:features a) (:features b)))
+      (new BigDecimal
+           (sq-euclidean-distance (:features a) (:features b))))
     (getDimensions [this point]
       (count (:features point)))
     (getDimensionValue [this dimension point]
