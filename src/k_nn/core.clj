@@ -20,7 +20,7 @@
   (Math/sqrt (sum sq-diff a b)))
 
 (defn sq-euclidean-distance [a b]
-  (sum sq-diff a b))
+  (new BigDecimal (sum sq-diff a b)))
 
 (def interface
   (reify IKDTree
@@ -29,16 +29,16 @@
     (getDimensions [this point]
       (count (:features point)))
     (getDimensionValue [this dimension point]
-      (nth (:features point) (dec dimension)))
+      (nth (:features point) dimension))
     (setDimensionValue [this dimension value point]
       {:class (:class point)
-       :features (assoc (:features point) (dec dimension) value)})))
+       :features (assoc (:features point) dimension value)})))
 
 (defn prepare [dataset]
   ;build the KDTree to use later
   ;map an insert over each data point? seems easy
   (let [kdtree (new KDTree interface)]
-    (map #(.insert kdtree %) dataset)
+    (doall (map #(.insert kdtree %) dataset))
     kdtree))
 
 ;nearest neighbors
@@ -54,5 +54,4 @@
 (defn classify [k ^KDTree kdtree input]
   ;use KDTree to get the 1-nn for quick testing
   ;expand to find k-nn later on...
-  (println (type kdtree))
   (.closest kdtree input))

@@ -9,7 +9,7 @@
 
 (defn format-csv-data [filename]
   (map #(assoc {}
-               :features (map (fn [x] (Float/parseFloat x)) (drop-last %))
+               :features (mapv (fn [x] (new BigDecimal (Float/parseFloat x))) (drop-last %))
                :class (Integer/parseInt (last %)))
        (map #(s/split % #",")
             (s/split (slurp filename) #"\n"))))
@@ -27,6 +27,6 @@
   (testing "1-nn on famous iris data"
     (let [kdtree (prepare dataset)]
       (doall (map (fn [test]
-                    (is (= (:class (classify 1 kdtree test))
+                    (is (= (:class (.getValue (classify 1 kdtree test)))
                            (:class test))))
                   tests)))))
