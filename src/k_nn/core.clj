@@ -2,10 +2,23 @@
   (:import (com.evolvingneuron KDTree)
            (com.evolvingneuron IKDTree)))
 
+(set! *warn-on-reflection* true)
+(set! *unchecked-math* true)
+
 ;is there a better way to expose constants like this? just pass them?
 ;keyword args? This seems cleanest, but it is hardly any good for
 ;parallelism
 (def partition-const 30)
+
+;read more, not sure why I need both
+(defprotocol point-proto
+  (get-class [this])
+  (get-features [this]))
+
+(deftype data-point [class features]
+  point-proto
+  (get-class [this] (. this class))
+  (get-features [this] (. this features)))
 
 (defn abs [x]
   (if (neg? x) (- 0 x) x))
@@ -26,14 +39,14 @@
   (reify IKDTree
     (distance [this a b]
       (new BigDecimal
-           (sq-euclidean-distance (:features a) (:features b))))
+           ^Double (sq-euclidean-distance (get-features a) (get-features b))))
     (getDimensions [this point]
-      (count (:features point)))
+      (count (get-features point)))
     (getDimensionValue [this dimension point]
-      (nth (:features point) dimension))
+      (nth (get-features point) dimension))
     (setDimensionValue [this dimension value point]
-      {:class (:class point)
-       :features (assoc (:features point) dimension value)})))
+      (->data-point (get-class point)
+                    (assoc (get-features point) dimension value)))))
 
 (defn prepare [dataset]
   ;build the KDTree to use later
@@ -41,12 +54,6 @@
   (let [kdtree (new KDTree interface)]
     (doall (map #(.insert kdtree %) dataset))
     kdtree))
-
-;nearest neighbors
-;return the classification of the neighbors as a list
-;may be able to factor this out...
-(defn nn [k distances]
-  (take k (sort-by :distance distances)))
 
 ;dataset is a list of features and their classifications
 ;dataset looks like:
