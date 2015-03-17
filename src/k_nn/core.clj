@@ -7,7 +7,7 @@
 (set! *unchecked-math* true)
 
 (defn sum [f & rest]
-  (reduce +' (apply (partial map f) rest)))
+  (reduce + (apply (partial map f) rest)))
 
 (defn sq-diff [a b]
   (Math/pow (- a b) 2))
@@ -21,16 +21,15 @@
 (def interface
   (reify IKDTree
     (distance [this a b]
-      (new BigDecimal
-           ^Double (sq-euclidean-distance (:features a) (:features b))))
+      (sq-euclidean-distance (:features a) (:features b)))
     (getDimensions [this point]
       (count (:features point)))
     (getDimensionValue [this dimension point]
-      (aget ^"[Ljava.math.BigDecimal;" (:features point) dimension))
+      (aget ^floats (:features point) dimension))
     (setDimensionValue [this dimension value point]
       (let [ret {:class (:class point)
-                 :features (aclone ^"[Ljava.math.BigDecimal;" (:features point))}]
-        (aset ^"[Ljava.math.BigDecimal;" (:features ret) dimension value)
+                 :features (aclone ^floats (:features point))}]
+        (aset ^floats (:features ret) dimension value)
         ret))))
 
 (defn prepare [dataset]

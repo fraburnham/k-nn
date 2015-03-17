@@ -7,8 +7,8 @@
 (defn format-csv-data [filename]
   (map #(assoc {}
          :features
-         (into-array ^BigDecimal
-                     (mapv (fn [x] (new BigDecimal (Float/parseFloat x))) (drop-last %)))
+         (float-array
+           (map (fn [x] (Float/parseFloat x)) (drop-last %)))
          :class (Integer/parseInt (last %)))
        (map #(s/split % #",")
             (s/split (slurp filename) #"\n"))))
