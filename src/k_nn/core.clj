@@ -18,10 +18,21 @@
 (defn sq-euclidean-distance [a b]
   (sum sq-diff a b))
 
+(defn asq-euclidean-distance [a b]
+  ;could use a same dimension sanity check...
+  (loop [i 0
+         ret 0.0
+         end (count a)]
+    (if (= i end)
+      ret
+      (let [x (aget ^floats a i)
+            y (aget ^floats b i)]
+        (recur (inc i) (+ ret (sq-diff x y)) end)))))
+
 (def interface
   (reify IKDTree
     (distance [this a b]
-      (sq-euclidean-distance (:features a) (:features b)))
+      (asq-euclidean-distance (:features a) (:features b)))
     (getDimensions [this point]
       (count (:features point)))
     (getDimensionValue [this dimension point]

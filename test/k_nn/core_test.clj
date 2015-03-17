@@ -19,7 +19,8 @@
 (deftest iris-test
   (testing "1-nn on famous iris data"
     (let [kdtree (prepare dataset)]
-      (doall (map (fn [test]
-                    (is (= (:class (.getValue ^KDNode (classify 1 kdtree test)))
-                           (:class test))))
-                  tests)))))
+      (time
+        (doall (map (fn [test]
+                      (is (= (:class (.getValue ^KDNode (classify 1 kdtree test)))
+                             (:class test))))
+                    tests))))))
