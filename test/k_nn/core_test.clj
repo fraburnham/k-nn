@@ -4,15 +4,12 @@
             [clojure.string :as s])
   (:import (com.evolvingneuron KDNode)))
 
-;trying out test driven development
-;start with making tests for each of the expected interface functions
-;Red Green Refactor
-
 (defn format-csv-data [filename]
-  (map (fn [z]
-         (->data-point
-           (Integer/parseInt (last z))
-           (mapv (fn [x] (new BigDecimal (Float/parseFloat x))) (drop-last z))))
+  (map #(assoc {}
+         :features
+         (into-array ^BigDecimal
+                     (mapv (fn [x] (new BigDecimal (Float/parseFloat x))) (drop-last %)))
+         :class (Integer/parseInt (last %)))
        (map #(s/split % #",")
             (s/split (slurp filename) #"\n"))))
 
@@ -22,7 +19,7 @@
 (deftest iris-test
   (testing "1-nn on famous iris data"
     (let [kdtree (prepare dataset)]
-      (doall (pmap (fn [test]
-                    (is (= (get-class (.getValue ^KDNode (classify 1 kdtree test)))
-                           (get-class test))))
+      (doall (map (fn [test]
+                    (is (= (:class (.getValue ^KDNode (classify 1 kdtree test)))
+                           (:class test))))
                   tests)))))
